@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Price Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Smart Price Finder</h1>
+        <p class="subtitle">Find products closest to your budget</p>
+
+        <!-- Price Search -->
+        <section class="search-section">
+
+            <h2>Find products around</h2>
+
+            <div class="search-box">
+
+                <span>₹</span>
+
+                <input
+                    type="number"
+                    id="targetPrice"
+                    placeholder="70000"
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Range Search -->
+        <section class="search-section">
+
+            <h2>Find products in this range</h2>
+
+            <div class="range-box">
+
+                <div class="input-group">
+
+                    <label>Minimum Price</label>
+
+                    <div class="price-input">
+                        <span>₹</span>
+
+                        <input
+                            type="number"
+                            id="minPrice"
+                            placeholder="50000"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Maximum Price</label>
+
+                    <div class="price-input">
+                        <span>₹</span>
+
+                        <input
+                            type="number"
+                            id="maxPrice"
+                            placeholder="80000"
+                        >
+                    </div>
+
+                </div>
+
+                <button id="rangeButton">
+                    Find Products
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Results -->
+        <section class="results-section">
+
+            <div class="results-header">
+
+                <h2 id="resultTitle">
+                    Closest Products
+                </h2>
+
+                <span id="resultCount"></span>
+
+            </div>
+
+            <div
+                id="productsContainer"
+                class="products-container"
+            >
+
+                <p class="message">
+                    Enter a price and click Search.
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
