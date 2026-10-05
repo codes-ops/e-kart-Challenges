@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Personalized Recommendations</h1>
+
+        <div class="user-section">
+            <label for="userSelect">Current User:</label>
+            <select id="userSelect">
+                <option value="A">User A</option>
+                <option value="B">User B</option>
+                <option value="C">User C</option>
+            </select>
+        </div>
+
+        <div class="product-section">
+            <h2>Products Viewed</h2>
+            <div id="viewedProducts" class="viewed-products"></div>
+        </div>
+
+        <div class="recommendation-header">
+            <h2>Recommended For You</h2>
+            <button id="refreshBtn">Refresh Recommendations</button>
+        </div>
+
+        <div id="recommendations" class="recommendations"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
